@@ -1,5 +1,8 @@
 <form #myForm="ngForm">
 
+    <app-radio-pre  name="tipo" [(ngModel)]="person.tipo"></app-radio-pre>
+<h2>Actua como:</h2>
+<app-actuo [label]="seleccine" name="tipoPersona" [(ngModel)]="person.tipoPersona"></app-actuo>
   <h2>Personal Information</h2>
   <div class="form-group">
     <label for="firstName">First Name</label>

@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 interface Person {
   firstName: string;
   lastName: string;
+  tipoPersona: string;
+  tipo: string;
   address: Address;
 }
 
@@ -20,6 +22,7 @@ interface Address {
 })
 export class FormpadreComponent implements OnInit {
   person: Person = <Person>{ address: <Address>{}};
+  seleccione='escriba su nombre';
   constructor() { }
 
   ngOnInit() {
